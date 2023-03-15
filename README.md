@@ -1,9 +1,9 @@
 # Basic integration of yFiles in PowerBI
 
 ![](./assets/SampleDashboard.png)
-This sample demonstrates how to get yFiles diagrams into a Power BI dashboard with dataset integration. It's a minimal integration without lots of customizations and editing features and should be a stepping stone for your particular use-case. All of the yFiles customizations and the full breadth of the yFiles API can be used inside PowerBI. Aside from a few PowerBI details, there is very little difference with respect to any other web development effort.  
+This sample demonstrates how to get [yFiles diagrams](https://yworks.com/yfiles) into a [Power BI](https://powerbi.microsoft.com/) dashboard with dataset integration. It's a minimal integration without lots of customizations and editing features and should be a stepping stone for your particular use-case. All of the [yFiles customizations](https://live.yworks.com/) and the full breadth of the [yFiles API](https://docs.yworks.com/yfileshtml/) can be used inside PowerBI. Aside from a few Power BI details, there is very little difference with respect to any other web development effort.  
 
-The data required to build a graph should have at least a `FromId` and a `ToId` defining the edge endpoints. Other fields can optionally be used for edge and node labels. Since a PowerBI report can be based on only one data table it means that you can't have the incidence (edge definitions) and node data in separate tables. A good practice here is to have all the relevant node fields in the table plus one extra field defining and edge. This means that you, inevitably, will have some denormalized data if the graph is not a tree but this is quite common and should not be a problem in general.
+The data required to build a graph should have at least a `FromId` and a `ToId` defining the edge endpoints. Other fields can optionally be used for edge and node labels. Since a Power BI report can be based on only one data table it means that you can't have the incidence (edge definitions) and node data in separate tables. A good practice here is to have all the relevant node fields in the table plus one extra field defining and edge. This means that you, inevitably, will have some denormalized data if the graph is not a tree but this is quite common and should not be a problem in general.
 
 ## Installation
 
@@ -18,9 +18,9 @@ The most import elements in this tutorial are:
 ```
 
 In case the certificate is still giving problems with something like *"net::ERR_CERT_COMMON_NAME_INVALID"*, it's because Chrome browser blocks this address https://localhost:8080 because of non-valid certificate.
-Please open the following link in separate browser tab: https://localhost:8080/assets/status. Chrome will show the warning message, click `advanced > proceed` to unsafe version. After that Chrome will work with dev visual correctly.
+Please open the following link in separate browser tab: https://localhost:8080/assets/status. Chrome will show the warning message, click `advanced > proceed` to unsafe version. After that Chrome will work with the development visual correctly.
 
-You can use any browser to enjoy Power BI dashboards but Chrome is most apt for debugging custom visuals.
+You can use any browser to enjoy Power BI dashboards but Chrome/Edge is most apt for debugging custom visuals.
 
 If you see an error like the one below
 
@@ -43,7 +43,7 @@ All other fields are optional but you will normally also wish to define:
 
 ## Styling
 
-The widget does not define any properties targeting the diagramming style in order to keep the code tidy and easy to extend. 
+The widget does not define any properties targeting the diagramming style in order to keep the code tidy and easy to extend. Refer to [the yFiles documentation](https://docs.yworks.com/yfileshtml/#/dguide/styles) to learn more about the many styling and [automatic layout](https://docs.yworks.com/yfileshtml/#/dguide/layout) options.
 
 ## Filtering and slicing
 
@@ -51,12 +51,12 @@ The diagramming widget will react to any filter or slicing but not the other way
 
 ## Feedback
 
-For help or feedback [use Github issues](https://github.com/yWorks/graphs-in-power-bi/issues) or [Tweet us](https://twitter.com/yworks). You can also [mail us directly](mailto:contact@yWorks.com).
+For help or feedback [use Github issues](https://github.com/yWorks/yfiles-power-bi-integration-basic/issues) or [Tweet us](https://twitter.com/yworks). You can also [mail us directly](mailto:hello@yWorks.com).
 
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015-2019 yWorks GmbH
+Copyright (c) 2015-2023 yWorks GmbH
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
