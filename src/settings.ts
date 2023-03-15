@@ -4,7 +4,6 @@ import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 import FormattingSettingsCard = formattingSettings.Card;
 import FormattingSettingsSlice = formattingSettings.Slice;
 import FormattingSettingsModel = formattingSettings.Model;
-import {ArrowType} from "yfiles";
 
 /**
  * Data Point Formatting Card
