@@ -1,7 +1,7 @@
 # Basic integration of yFiles for HTML in Power BI
 
 ![](./assets/SampleDashboard.png)
-This sample demonstrates how to get yFiles diagrams into a Power BI dashboard with dataset integration. It's a minimal integration without lots of customizations and editing features and should be a stepping stone for your particular use-case. All of the yFiles customizations and the full breadth of the yFiles API can be used inside PowerBI. Aside from a few PowerBI details, there is very little difference with respect to any other web development effort.
+This sample demonstrates how to get [yFiles diagrams](https://yworks.com/yfiles) into a [Power BI](https://powerbi.microsoft.com/) dashboard with dataset integration. It's a minimal integration without lots of customizations and editing features and should be a stepping stone for your particular use-case. All the [yFiles customizations](https://live.yworks.com/) and the full breadth of the [yFiles API](https://docs.yworks.com/yfileshtml/) can be used inside PowerBI. Aside from a few Power BI details, there is very little difference with respect to any other web development effort.  
 
 The data required to build a graph should have at least a `FromId` and a `ToId` defining the edge endpoints. Other fields can optionally be used for edge and node labels. Since a Power BI report can be based on only one data table, it means that you can't have the incidence (edge definitions) and node data in separate tables.
 
@@ -12,12 +12,19 @@ A good practice here is to have all the relevant node fields in the table plus o
 ### Install Power BI tools
 
 The tutorial [Developing a Power BI visual](https://docs.microsoft.com/en-us/power-bi/developer/custom-visual-develop-tutorial) details the steps to create a custom visual and applies to this yFiles widget as well.
-The most import elements in this tutorial are the following.
+The most import elements in this tutorial are:
 
-- installing the Power BI tools for NodeJs via `npm i -g powerbi-visuals-tools`
-- registration of a Power BI certificate for localhost via `pbiviz --install-cert`
-- start the custom Power BI development server with
+Installing the Power BI tools for Node.js:
+```bash
+npm i -g powerbi-visuals-tools
+```
 
+Registration of a Power BI certificate for localhost:
+```bash
+pbiviz --install-cert
+```
+
+Starting the custom Power BI development server:
 ```bash
   pbiviz start
 ```
@@ -44,7 +51,7 @@ To change this, modify the files `./package.json` and `./src/visual.ts`, respect
 ## Data mapping
 
 The yFiles widget consumes a shared dataset. The desktop version of Power BI allows multiple sets, but the online only allows one dataset per report. It is via this shared dataset that the widgets within one report can communicate (slicing etc.).
-In order to have a graph one needs at least two fields:
+In order to have a graph, one needs at least two fields:
 
 - **NodeId**: an id defining the start of an edge. This can be a unique identifier from an entity (say from a database). Internally this id is converted to a string.
 - **TargetId**: an id of another entity defining the sink of an edge.
@@ -65,7 +72,7 @@ The diagramming widget will react to any filter or slicing but not the other way
 
 ## Feedback
 
-For help or feedback use [Github issues](https://github.com/yWorks/yfiles-power-bi-integration-basic/issues) or [Tweet us](https://twitter.com/yworks). You can also [mail us directly](mailto:hello@yWorks.com).
+For help or feedback use [GitHub issues](https://github.com/yWorks/yfiles-power-bi-integration-basic/issues) or [Tweet us](https://twitter.com/yworks). You can also [mail us directly](mailto:hello@yWorks.com).
 
 ## License
 
