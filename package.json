@@ -1,6 +1,6 @@
 {
   "name": "yfiles-power-bi-integration-basic",
-  "description": "Basic integration of yFiles for HTML in PowerBI",
+  "description": "Basic integration of yFiles for HTML in Power BI",
   "author": "yWorks GmbH <yfileshtml@yworks.com>",
   "version": "1.0.0",
   "private": true,
@@ -9,8 +9,7 @@
     "pbiviz": "pbiviz",
     "start": "pbiviz start",
     "package": "pbiviz package",
-    "lint": "npx eslint",
-    "tsc": "tsc --watch"
+    "lint": "npx eslint"
   },
   "dependencies": {
     "@types/d3": "5.7.2",
