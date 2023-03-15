@@ -1,0 +1,101 @@
+{
+  "dataRoles": [
+    {
+      "displayNameKey": "Visual_NodeId",
+      "description": "The id's corresponding to the source of an edge.",
+      "name": "NodeId",
+      "kind": "Grouping",
+      "displayName": "Node Id"
+    },
+    {
+      "displayNameKey": "Visual_TargetId",
+      "description": "The id's corresponding to the target of an edge.",
+      "name": "TargetId",
+      "kind": "Grouping",
+      "displayName": "Target Id"
+    },
+    {
+      "displayNameKey": "Visual_NodeMainLabel",
+      "description": "The main labels of the nodes.",
+      "name": "NodeMainLabel",
+      "kind": "Measure",
+      "displayName": "Main Label"
+    },
+    {
+      "displayNameKey": "Visual_Edge_Label",
+      "description": "The labels shown next to the edges.",
+      "name": "EdgeLabel",
+      "kind": "Grouping",
+      "displayName": "Edge Label"
+    }
+  ],
+  "objects": {
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "NodeId": {
+            "max": 1
+          },
+          "TargetId": {
+            "max": 1
+          },
+          "NodeLabel": {
+            "max": 1
+          },
+          "NodeShape": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "for": {
+                "in": "NodeId"
+              }
+            },
+            {
+              "for": {
+                "in": "TargetId"
+              }
+            },
+            {
+              "for": {
+                "in": "NodeMainLabel"
+              }
+            },
+            {
+              "for": {
+                "in": "NodeSecondLabel"
+              }
+            },
+            {
+              "for": {
+                "in": "NodeShape"
+              }
+            },
+            {
+              "for": {
+                "in": "EdgeLabel"
+              }
+            },
+            {
+              "for": {
+                "in": "NodeTopLabel"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 1000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "privileges": []
+}

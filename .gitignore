@@ -1,0 +1,8 @@
+.idea
+node_modules
+yFiles/license.json
+yFiles/yfiles-umd-25.0.3.tgz
+yFiles/yfiles-25.0.3.tgz
+webpack.statistics.dev.html
+.tmp
+.DS_Store
