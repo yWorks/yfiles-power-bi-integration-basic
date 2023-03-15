@@ -12,8 +12,6 @@
     "lint": "npx eslint"
   },
   "dependencies": {
-    "@types/d3": "5.7.2",
-    "d3": "5.12.0",
     "powerbi-visuals-api": "~5.1.0",
     "powerbi-visuals-utils-dataviewutils": "^6.0.0",
     "powerbi-visuals-utils-formattingmodel": "5.0.0",
