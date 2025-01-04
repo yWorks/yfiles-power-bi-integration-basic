@@ -21,7 +21,7 @@ npm i -g powerbi-visuals-tools
 
 Registration of a Power BI certificate for localhost:
 ```bash
-pbiviz --install-cert
+pbiviz install-cert
 ```
 
 Starting the custom Power BI development server:
@@ -30,7 +30,7 @@ Starting the custom Power BI development server:
 ```
 
 If the certificate is still giving problems with an error like _"net::ERR_CERT_COMMON_NAME_INVALID"_, it's because the Chrome browser blocks the address https://localhost:8080 because of a non-valid certificate.
-Please open the following link in separate browser tab: https://localhost:8080/assets/status. Chrome will show the warning message, click `advanced > proceed` to unsafe version. After that, Chrome will work with the development visual correctly.
+Please open the following link in separate browser tab: https://localhost:8080/assets/status. Chrome will show a warning message, type in the address bar `chrome://flags/#allow-insecure-localhost` to allow using localhost over https. After that, Chrome will work with the development visual correctly.
 
 You can use any browser to enjoy Power BI dashboards, but Chromium browsers like Edge and Chrome are aptest for debugging custom visuals.
 

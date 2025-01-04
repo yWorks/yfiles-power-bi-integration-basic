@@ -2,7 +2,7 @@
   "name": "yfiles-power-bi-integration-basic",
   "description": "Basic integration of yFiles for HTML in Power BI",
   "author": "yWorks GmbH <yfileshtml@yworks.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -12,10 +12,10 @@
     "lint": "npx eslint"
   },
   "dependencies": {
-    "powerbi-visuals-api": "~5.1.0",
+    "powerbi-visuals-api": "~5.3.0",
     "powerbi-visuals-utils-dataviewutils": "^6.0.0",
     "powerbi-visuals-utils-formattingmodel": "5.0.0",
-    "yfiles": "./yFiles/yfiles-25.0.3+dev.tgz"
+    "yfiles": "./yFiles/yfiles-26.0.3+dev.tgz"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.55.0",
