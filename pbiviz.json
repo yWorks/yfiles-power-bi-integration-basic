@@ -4,17 +4,18 @@
     "displayName": "basic",
     "guid": "basic95B03181D2434E0FB4CAFD9B2F7B205F",
     "visualClassName": "Visual",
-    "version": "1.0.0",
+    "version": "1.0.0.0",
     "description": "",
     "supportUrl": "",
     "gitHubUrl": ""
   },
-  "apiVersion": "5.1.0",
+  "apiVersion": "5.3.0",
   "author": { "name": "", "email": "" },
   "assets": { "icon": "assets/icon.png" },
   "externalJS": null,
   "style": "style/visual.less",
   "capabilities": "capabilities.json",
   "dependencies": null,
-  "stringResources": []
+  "stringResources": [],
+  "version": "1.0.0.0"
 }
